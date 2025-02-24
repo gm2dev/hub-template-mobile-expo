@@ -23,10 +23,10 @@ const appIconBadgeConfig: AppIconBadgeConfig = {
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: Env.NAME,
-  description: `${Env.NAME} Mobile App`,
+  description: `${Env.NAME}`,
   owner: Env.EXPO_ACCOUNT_OWNER,
   scheme: Env.SCHEME,
-  slug: 'obytesapp',
+  slug: 'poc-mycool-app',
   version: Env.VERSION.toString(),
   orientation: 'portrait',
   icon: './assets/icon.png',
