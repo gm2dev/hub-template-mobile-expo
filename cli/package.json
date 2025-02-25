@@ -9,7 +9,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "preinstall": "bunx only-allow bun"
   },
   "bin": {
     "create-chasty-app": "index.js"
@@ -22,7 +23,8 @@
   ],
   "dependencies": {
     "consola": "^3.2.3",
-    "fs-extra": "^10.1.0"
+    "fs-extra": "^10.1.0",
+    "only-allow": "^1.1.1"
   },
   "keywords": [
     "react-native",
