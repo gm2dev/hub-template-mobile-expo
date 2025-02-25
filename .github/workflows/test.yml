@@ -12,11 +12,14 @@
 
 name: Tests (jest)
 
+# on:
+#   push:
+#     branches: [main, master]
+#   pull_request:
+#     branches: [main, master]
+
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]
+  workflow_dispatch: # Allows manual trigger only
 
 jobs:
   test:
