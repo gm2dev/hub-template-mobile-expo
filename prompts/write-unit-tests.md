@@ -36,7 +36,7 @@ Follow the following steps one by one:
    - Avoid using multiple assertions within a waitFor callback
    - While mocking functions, make sure to mock the function with the correct type and arguments
 
-4. Run the tests for the file with test coverage: `pnpm test <component-name> -- --coverage --coverageReporters="text"`
+4. Run the tests for the file with test coverage: `bun test <component-name> -- --coverage --coverageReporters="text"`
 
 5. Check Tests Results and Coverage:
 

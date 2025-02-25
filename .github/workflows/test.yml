@@ -24,16 +24,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📦 Checkout project repo
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v4
 
-      - name: 📦 Setup Node + PNPM + install deps
-        uses: ./.github/actions/setup-node-pnpm-install
+      - uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: 📦 Setup Node + bun + install deps
+        uses: ./.github/actions/setup-node-bun-install
 
       - name: 🏃‍♂️ Run Tests
-        run: pnpm run test:ci
+        run: bun run test:ci
 
       - name: Jest Coverage Comment
         uses: MishaKav/jest-coverage-comment@main
