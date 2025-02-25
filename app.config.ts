@@ -23,10 +23,10 @@ const appIconBadgeConfig: AppIconBadgeConfig = {
 export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name: Env.NAME,
-  description: `${Env.NAME} Mobile App`,
+  description: `${Env.NAME}`,
   owner: Env.EXPO_ACCOUNT_OWNER,
   scheme: Env.SCHEME,
-  slug: 'obytesapp',
+  slug: 'poc-mycool-app',
   version: Env.VERSION.toString(),
   orientation: 'portrait',
   icon: './assets/icon.png',
@@ -34,6 +34,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   newArchEnabled: true,
   updates: {
     fallbackToCacheTimeout: 0,
+    url: 'https://u.expo.dev/56636c35-ff5a-4141-990e-7d6388faefd3',
   },
   assetBundlePatterns: ['**/*'],
   ios: {
@@ -77,6 +78,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     ['app-icon-badge', appIconBadgeConfig],
     ['react-native-edge-to-edge'],
   ],
+  runtimeVersion: {
+    policy: 'appVersion',
+  },
   extra: {
     ...ClientEnv,
     eas: {

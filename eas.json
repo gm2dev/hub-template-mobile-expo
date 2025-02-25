@@ -1,12 +1,13 @@
 {
   "cli": {
-    "version": ">= 3.8.1"
+    "version": ">= 3.8.1",
+    "appVersionSource": "remote"
   },
   "build": {
     "production": {
       "channel": "production",
       "distribution": "store",
-      "pnpm": "9.12.3",
+      "bun": "1.0.35",
       "ios": {
         "image": "latest"
       },
@@ -23,7 +24,7 @@
     "staging": {
       "channel": "staging",
       "distribution": "internal",
-      "pnpm": "9.12.3",
+      "bun": "1.0.35",
       "ios": {
         "image": "latest"
       },
@@ -40,7 +41,7 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "pnpm": "9.12.3",
+      "bun": "1.0.35",
       "ios": {
         "image": "latest"
       },
@@ -53,7 +54,7 @@
       }
     },
     "simulator": {
-      "pnpm": "9.12.3",
+      "bun": "1.0.35",
       "ios": {
         "simulator": true,
         "image": "latest"

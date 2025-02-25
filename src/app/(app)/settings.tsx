@@ -37,7 +37,7 @@ export default function Settings() {
           </ItemsContainer>
 
           <ItemsContainer title="settings.about">
-            <Item text="settings.app_name" value={Env.APP_ENV} />
+            <Item text="settings.stage" value={Env.APP_ENV} />
             <Item text="settings.app_name" value={Env.NAME} />
             <Item text="settings.version" value={Env.VERSION} />
             <Item text="settings.api_url" value={Env.API_URL} />
