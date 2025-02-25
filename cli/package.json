@@ -1,11 +1,11 @@
 {
-  "name": "create-obytes-app",
-  "version": "1.7.1",
-  "description": "Obytes expo starter cli",
-  "homepage": "https://github.com/obytes/react-native-template-obytes",
+  "name": "create-chasty-app",
+  "version": "0.0.1",
+  "description": "Chasty expo starter cli",
+  "homepage": "https://github.com/Chasty/my-rn-app",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/obytes/react-native-template-obytes.git"
+    "url": "git+https://github.com/Chasty/my-rn-app"
   },
   "main": "index.js",
   "scripts": {
