@@ -11,19 +11,30 @@
 #       - name : 📦 Setup Node + bun + install deps
 #         uses: ./.github/actions/setup-node-bun-install
 
-name: 'Setup  Node + bun + Install Dependencies'
-description: 'Setup  Node + bun + Install Dependencies'
-runs:
-  using: 'composite'
-  steps:
-    - uses: bun/action-setup@v4
-      with:
-        run_install: false
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 20
-        cache: 'bun'
+name: Setup Node + Bun + Install Dependencies
+description: Setup Node.js and Bun, and install dependencies
 
-    - name: 📦 Install Project Dependencies
-      run: bun install --frozen-lockfile
+runs:
+  using: composite
+  steps:
+    - name: Setup Bun
+      uses: oven-sh/setup-bun@v1
+      with:
+        bun-version: latest
+
+    - name: Get bun store directory
+      id: bun-store-dir
       shell: bash
+      run: echo "dir=$(bun pm cache dir)" >> $GITHUB_OUTPUT
+
+    - name: Cache bun store
+      uses: actions/cache@v4
+      with:
+        path: ${{ steps.bun-store-dir.outputs.dir }}
+        key: ${{ runner.os }}-bun-store-${{ hashFiles('**/bun.lockb') }}
+        restore-keys: |
+          ${{ runner.os }}-bun-store-
+
+    - name: Install dependencies
+      shell: bash
+      run: bun install
