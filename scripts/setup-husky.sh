@@ -1,4 +1,3 @@
-#!/usr/bin/env sh
 
 # Navigate to the project root
 cd "$(dirname "$0")/.."
@@ -11,7 +10,6 @@ mkdir -p .husky
 
 # Create pre-commit hook
 cat > .husky/pre-commit << 'EOF'
-#!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
 . "$(dirname "$0")/common.sh"
