@@ -5,14 +5,14 @@
   "homepage": "https://github.com/Chasty/my-rn-app",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chasty/my-rn-app"
+    "url": "git+https://github.com/Chasty/my-rn-app.git"
   },
   "main": "index.js",
   "scripts": {
     "start": "node ."
   },
   "bin": {
-    "create-obytes-app": "index.js"
+    "create-chasty-app": "index.js"
   },
   "files": [
     "index.js",
@@ -33,6 +33,6 @@
     "react-native-boilerplate",
     "expo-boilerplate",
     "cli",
-    "obytes"
+    "chasty"
   ]
 }
