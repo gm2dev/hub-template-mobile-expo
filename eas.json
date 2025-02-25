@@ -7,7 +7,7 @@
     "production": {
       "channel": "production",
       "distribution": "store",
-      "bun": "9.12.3",
+      "bun": "1.0.35",
       "ios": {
         "image": "latest"
       },
@@ -24,7 +24,7 @@
     "staging": {
       "channel": "staging",
       "distribution": "internal",
-      "bun": "9.12.3",
+      "bun": "1.0.35",
       "ios": {
         "image": "latest"
       },
@@ -41,7 +41,7 @@
     "development": {
       "developmentClient": true,
       "distribution": "internal",
-      "bun": "9.12.3",
+      "bun": "1.0.35",
       "ios": {
         "image": "latest"
       },
@@ -54,7 +54,7 @@
       }
     },
     "simulator": {
-      "bun": "9.12.3",
+      "bun": "1.0.35",
       "ios": {
         "simulator": true,
         "image": "latest"
