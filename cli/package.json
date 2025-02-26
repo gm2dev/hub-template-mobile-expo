@@ -1,18 +1,18 @@
 {
-  "name": "create-chasty-app",
+  "name": "@gm2dev/expo-template",
   "version": "0.0.6",
-  "description": "Chasty expo starter cli",
-  "homepage": "https://github.com/Chasty/my-rn-app",
+  "description": "GM2 expo starter cli",
+  "homepage": "https://github.com/gm2dev/hub-template-mobile-expo",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chasty/my-rn-app.git"
+    "url": "git+https://github.com/gm2dev/hub-template-mobile-expo.git"
   },
   "main": "index.js",
   "scripts": {
     "start": "node ."
   },
   "bin": {
-    "create-chasty-app": "index.js"
+    "expo-template": "index.js"
   },
   "files": [
     "index.js",
@@ -34,6 +34,6 @@
     "react-native-boilerplate",
     "expo-boilerplate",
     "cli",
-    "chasty"
+    "gm2dev"
   ]
 }

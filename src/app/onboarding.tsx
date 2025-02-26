@@ -20,9 +20,7 @@ export default function Onboarding() {
         <Cover />
       </View>
       <View className="justify-end ">
-        <Text className="my-3 text-center text-5xl font-bold">
-          Obytes Starter
-        </Text>
+        <Text className="my-3 text-center text-5xl font-bold">GM2 Starter</Text>
         <Text className="mb-2 text-center text-lg text-gray-600">
           The right way to build your mobile app
         </Text>

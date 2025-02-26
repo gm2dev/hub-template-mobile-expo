@@ -37,7 +37,7 @@ require('dotenv').config({
 const BUNDLE_ID = 'com.mycoolapp'; // ios bundle id
 const PACKAGE = 'com.mycoolapp'; // android package name
 const NAME = 'MyCoolApp'; // app name
-const EXPO_ACCOUNT_OWNER = 'chastywi'; // expo account owner
+const EXPO_ACCOUNT_OWNER = 'expo-owner'; // expo account owner
 const EAS_PROJECT_ID = '56636c35-ff5a-4141-990e-7d6388faefd3'; // eas project id
 const SCHEME = 'mycoolapp'; // app scheme
 
