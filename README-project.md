@@ -22,19 +22,19 @@ git clone https://github.com/user/repo-name
 
 cd ./repo-name
 
-pnpm install
+bun install
 ```
 
 To run the app on ios
 
 ```sh
-pnpm ios
+bun ios
 ```
 
 To run the app on Android
 
 ```sh
-pnpm android
+bun android
 ```
 
 ## ✍️ Documentation
