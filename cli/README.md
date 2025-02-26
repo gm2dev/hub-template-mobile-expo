@@ -3,7 +3,7 @@
 
 </p>
 <h1 align="center">
-  React Native Template Obytes
+  React Native Template GM2
 </h1>
 
 ![expo](https://img.shields.io/github/package-json/dependency-version/obytes/react-native-template-obytes/expo?label=expo) ![GitHub Repo stars](https://img.shields.io/github/stars/obytes/react-native-template-obytes) ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/obytes/react-native-template-obytes) ![GitHub issues](https://img.shields.io/github/issues/obytes/react-native-template-obytes) ![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/obytes/react-native-template-obytes)
@@ -13,7 +13,7 @@
 # 🚀 Quick start
 
 ```sh
-npx create-obytes-app@latest MyApp
+bunx @gm2dev/expo-template@latest MyApp
 
 ```
 
