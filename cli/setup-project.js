@@ -60,19 +60,14 @@ const updateProjectConfig = async (projectName) => {
     .replace(/obytes/gi, 'expo-owner');
 
   fs.writeFileSync(configPath, replaced, { spaces: 2 });
-
-  // Add a check before renaming
-  const readmeFilePath = path.join(process.cwd(), `${projectName}/README-project.md`);
-  const newReadmePath = path.join(process.cwd(), `${projectName}/README.md`);
-
-  if (fs.existsSync(readmeFilePath)) {
-    fs.renameSync(readmeFilePath, newReadmePath);
-  } else {
-    // Either create a new README.md with basic content or log a warning
-    const basicReadme = `# ${projectName}\n\nAdd your project description here.`;
-    fs.writeFileSync(newReadmePath, basicReadme);
-    console.log('⚠️  README-project.md not found, created a basic README.md instead');
-  }
+  const readmeFilePath = path.join(
+    process.cwd(),
+    `${projectName}/README-project.md`
+  );
+  fs.renameSync(
+    readmeFilePath,
+    path.join(process.cwd(), `${projectName}/README.md`)
+  );
 };
 
 const setupProject = async (projectName) => {
