@@ -4,8 +4,10 @@ const fs = require('fs-extra');
 const path = require('path');
 
 const initGit = async (projectName) => {
-  await execShellCommand(`cd ${projectName} && git init && cd ..`);
+  await execShellCommand(`cd ${projectName} && git init && git add . && git commit -m "feat: initial commit" --no-verify && cd ..`);
 };
+
+
 
 const installDeps = async (projectName) => {
   await runCommand(`cd ${projectName} && bun install`, {
