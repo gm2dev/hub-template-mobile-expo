@@ -13,7 +13,7 @@
 # 🚀 Quick start
 
 ```sh
-bunx @gm2dev/expo-template@latest MyApp
+bunx @gm2dev2/expo-template@latest MyApp
 
 ```
 
